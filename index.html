@@ -69,6 +69,17 @@
             font-family: Times;
         }
         
+        #complete {
+        	background-color: rgb(138,108,80);
+            border: none;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 25px;
+            font-family: Times;
+        }
+        
         button {
         	cursor: pointer;
         }
@@ -84,6 +95,7 @@
         }
         
         #popup {
+        	font-family: Italiana;
         	font-size: 30px;
         	top: 30%;
             left: 22%;
@@ -120,20 +132,22 @@
         <button class="loginclose" id="close">x</button>
         <br>
         
-        <label for="username"><b>Username</b></label>
+        <label for="username"><b>username</b></label>
 		<br>
     	<input type="text" placeholder="Enter Username" name="username" required>
         <br>
         <br>
         
-    	<label for="password"><b>Password</b></label>
+    	<label for="password"><b>password</b></label>
         <br>
     	<input type="password" placeholder="Enter Password" name="password" required>
         <br>
+        
+        <button class="loginproceed" id="complete">log In!</button>
         <br>
         
-    	<label for="remember" style="font-size: 20px;">
-      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
+    	<label for="remember" style="font-size: 20px; font-family: Times;">
+      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> remember me
     	</label>
 		</form>
     </div>
@@ -143,25 +157,28 @@
         <button class="signupclose" id="close">x</button>
         <br>
         
-        <label for="username"><b>Username</b></label>
+        <label for="username"><b>username</b></label>
 		<br>
     	<input type="text" placeholder="Enter Username" name="username" required>
         <br>
         <br>
         
-    	<label for="password"><b>Password</b></label>
+    	<label for="password"><b>password</b></label>
         <br>
     	<input type="password" placeholder="Enter Password" name="password" required>
         <br>
         <br>
         
-        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <label for="psw-repeat"><b>repeat password</b></label>
         <br>
     	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
         <br>
         
-    	<label for="remember" style="font-size: 20px;">
-      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
+        <button class="signinproceed" id="complete">sign in!</button>
+        <br>
+        
+    	<label for="remember" style="font-size: 20px; font-family: Times;">
+      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> remember me
     	</label>
 		</form>
     </div>
