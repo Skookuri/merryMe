@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css?family=Italiana');
         html {
@@ -56,18 +57,20 @@
             top: 40%;
         }
         
-        button {
+        #homebutton {
         	background-color: rgba(138,108,80, 0.6);
             border: none;
             color: white;
             padding: 10px;
             margin: 10px;
             font-size: 20px;
-            cursor: pointer; 
             border-radius: 25px;
             font-family: Times;
         }
         
+        button {
+        	cursor: pointer;
+        }
         button:hover {
         	opacity: 0.8;
         }
@@ -78,18 +81,114 @@
         	top: 52%;
             z-index: 99;
         }
+        
+        #popup {
+        	font-size: 30px;
+        	top: 30%;
+            left: 22%;
+        	display: none;
+        	color:rgb(138,108,80);
+            border-radius: 15px;
+            position: fixed;
+            padding: 10px;
+            z-index: 1000;
+            margin: 0 auto;
+            height: fit-content;
+            background-color: white;
+            width: 50%;
+            text-align: center;
+            vertical-align: center;
+        }
+        
+        #close {
+        	content: "\00d7"; /* This will render the 'X' */
+        	float: right;
+            color: white;
+            display: inline-block;
+            border-radius: 25px;
+            border: none;
+            background-color: rgb(138,108,80);
+        }
     </style>
 </head>
   
 <body>
+	<div class="loginpopup" id="popup">
+    	<form>
+        <button class="loginclose" id="close">x</button>
+        <br>
+        
+        <label for="username"><b>Username</b></label>
+		<br>
+    	<input type="text" placeholder="Enter Username" name="username" required>
+        <br>
+        <br>
+        
+    	<label for="password"><b>Password</b></label>
+        <br>
+    	<input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <br>
+        
+    	<label for="remember" style="font-size: 20px;">
+      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
+    	</label>
+		</form>
+    </div>
+    <div class="signuppopup" id="popup">
+    	<form>
+        <button class="signupclose" id="close">x</button>
+        <br>
+        
+        <label for="username"><b>Username</b></label>
+		<br>
+    	<input type="text" placeholder="Enter Username" name="username" required>
+        <br>
+        <br>
+        
+    	<label for="password"><b>Password</b></label>
+        <br>
+    	<input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <br>
+        
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <br>
+    	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <br>
+        
+    	<label for="remember" style="font-size: 20px;">
+      	<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
+    	</label>
+		</form>
+    </div>
     <div id="body2" style="color: white;">
         <h2 class="title" style="font-size: 96px; font-family: Italiana; font-weight: normal;">merryMe</h2>
         <h3 class="subtitle" style="font-weight: normal; font-style: italic;">making wedding planning easier.</h3>
         <div class="btn-group">
-        	<button>login</button>
-        	<button>sign up</button>
+        	<button class="login" id="homebutton">login</button>
+        	<button class="signup" id="homebutton">sign up</button>
         </div>
     </div>
+<script>
+$(document).ready(function(){
+  $(".login").click(function(){
+    $(".loginpopup").fadeIn();
+  });
+  
+  $(".loginclose").click(function(){
+  	$(".loginpopup").fadeOut();
+  });
+  
+  $(".signup").click(function(){
+    $(".signuppopup").fadeIn();
+  });
+  
+  $(".signupclose").click(function(){
+    $(".signuppopup").fadeOut();
+  });
+});
+</script>
 </body>
   
 </html>
