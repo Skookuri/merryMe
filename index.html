@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wedding Planning</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Italiana');
+        body {
+        	margin: 0;
+        }
+        #body2 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+  
+        #body2::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+  
+            /* Specify the background image to be used */
+            background-image: url(
+'https://media.discordapp.net/attachments/753663089265868873/1051205470074978394/Screen_Shot_2022-12-10_at_13.35.04.png?width=2160&height=1126');
+            background-size: cover;
+  
+            /* Specify the background image */
+            opacity: 0.45;
+            z-index: 0;
+            
+        }
+        
+        .btn-group {
+        	position: fixed;
+    		display: block;
+            top: 58%;
+            z-index: 98;
+		}
+        
+        .title {
+        	margin: 0;
+        	text-align: center;
+            float: center;
+            justify-content: space-around;
+            z-index: 100;
+            vertical-align: center;
+            position: absolute;
+            top: 40%;
+        }
+        
+        button {
+        	background-color: rgba(138,108,80, 0.6);
+            border: none;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+            cursor: pointer; 
+            border-radius: 25px;
+            font-family: Times;
+        }
+        
+        button:hover {
+        	opacity: 0.8;
+        }
+        
+        .subtitle {
+        	position: fixed;
+    		display: block;
+        	top: 52%;
+            z-index: 99;
+        }
+    </style>
+</head>
+  
+<body>
+    <div id="body2" style="color: white;">
+        <h2 class="title" style="font-size: 96px; font-family: Italiana; font-weight: normal;">merryMe</h2>
+        <h3 class="subtitle" style="font-weight: normal; font-style: italic;">making wedding planning easier.</h3>
+        <div class="btn-group">
+        	<button>login</button>
+        	<button>sign up</button>
+        </div>
+    </div>
+</body>
+  
+</html>
