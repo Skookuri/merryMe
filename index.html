@@ -12,6 +12,7 @@
         }
         body {
         	margin: 0;
+            background-color: black;
         }
         #body2 {
             height: 100vh;
@@ -113,6 +114,7 @@
 </head>
   
 <body>
+<div id="body2" style="color: white;">
 	<div class="loginpopup" id="popup">
     	<form>
         <button class="loginclose" id="close">x</button>
@@ -135,6 +137,7 @@
     	</label>
 		</form>
     </div>
+    
     <div class="signuppopup" id="popup">
     	<form>
         <button class="signupclose" id="close">x</button>
@@ -162,22 +165,29 @@
     	</label>
 		</form>
     </div>
-    <div id="body2" style="color: white;">
-        <h2 class="title" style="font-size: 96px; font-family: Italiana; font-weight: normal;">merryMe</h2>
-        <h3 class="subtitle" style="font-weight: normal; font-style: italic;">making wedding planning easier.</h3>
+    <!--popups-->
+    
+    
+    
+    <h2 class="title" style="font-size: 96px; font-family: Italiana; font-weight: normal;">merryMe</h2>
+    <h3 class="subtitle" style="font-weight: normal; font-style: italic;">making wedding planning easier.</h3>
         <div class="btn-group">
         	<button class="login" id="homebutton">login</button>
         	<button class="signup" id="homebutton">sign up</button>
         </div>
-    </div>
+</div>
 <script>
 $(document).ready(function(){
+  $('body').css('display', 'none');
+  
+  $('body:not(.title)').fadeIn(1000);
+  
   $(".login").click(function(){
     $(".loginpopup").fadeIn();
   });
   
   $(".loginclose").click(function(){
-  	$(".loginpopup").fadeOut();
+  	$(".loginpopup").hide();
   });
   
   $(".signup").click(function(){
@@ -185,7 +195,7 @@ $(document).ready(function(){
   });
   
   $(".signupclose").click(function(){
-    $(".signuppopup").fadeOut();
+    $(".signuppopup").hide();
   });
 });
 </script>
