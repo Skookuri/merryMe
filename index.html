@@ -97,8 +97,13 @@
         #popup {
         	font-family: Italiana;
         	font-size: 30px;
+            
         	top: 30%;
-            left: 22%;
+            /*left: 143px;
+            right: 50%;*/
+            
+            right, left: 50%;
+            
         	display: none;
         	color:rgb(138,108,80);
             border-radius: 15px;
@@ -122,6 +127,14 @@
             border: none;
             background-color: rgb(138,108,80);
         }
+        
+        /*screens bigger than 650px has this width*/
+        @media screen and (min-width: 651px) {
+        	#popup {
+            	width: 325px;
+            }
+        }
+        
     </style>
 </head>
   
