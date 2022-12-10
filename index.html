@@ -3,7 +3,10 @@
 <html>
 <head>
 	<title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    
     <style>
     @import url('https://fonts.googleapis.com/css?family=Italiana');
         html {
@@ -33,6 +36,9 @@
             background-image: url(
 'https://media.discordapp.net/attachments/753663089265868873/1051205470074978394/Screen_Shot_2022-12-10_at_13.35.04.png?width=2160&height=1126');
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            
   
             /* Specify the background image */
             opacity: 0.45;
@@ -85,6 +91,17 @@
         }
         button:hover {
         	opacity: 0.8;
+            transition: ease 0.4s;
+        }
+        
+        #homebutton:hover {
+        	color: rgb(138,108,80);
+            background-color: white;
+        }
+        
+        #complete:hover {
+        	color: white;
+            background-color: rgb(138,108,80);
         }
         
         .subtitle {
