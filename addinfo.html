@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
     </script>
     
-    <style>
+        <style>
     @import url('https://fonts.googleapis.com/css?family=Italiana');
         body {
         	margin: 0;
@@ -123,6 +123,7 @@
             text-align: center;
             margin: 0;
             width: 100%;
+            font-family: Italiana;
         }
         
         
@@ -139,18 +140,28 @@
         }
         
         form {
+        	padding-top: 50px;
+            padding-bottom: 50px;
         	display: inline-block;
         	position: absolute;
-            margin: 0;
-            top: 35%;
+            /*margin: 0;*/
+            margin-top: 30px;
+            margin-bottom: 30px;
+            top: 100%;
             font-family: Italiana;
             left: 50%;
             transform: translateX(-50%);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 50px;
+            width: 50%;
         }
         
         input {
         	font-family: Times;
             color: rgb(138,108,80);
+            border-width: 2px;
+            border-color: rgb(138,108,80);
+            border-style: dotted;
         }
 
     </style>
@@ -164,81 +175,38 @@
     </div>
     <div>
     	<p class="welcomemsg">welcome, [user].</p>
-        <h1 class="prompt">tell us some info about your wedding!</h1>
-    </div>
-    <div>
-    	<form>
-           	<label for="weddingdate">planned date:</label>
+        <h1 class="prompt">tell us some info about your wedding!<br><br>**don't worry, they can be estimates!**
+        <form>
+           	<label for="weddingdate">estimated date:</label>
   			<input type="date" name="weddingdate">
             <br>
-            
-  			<label for="e">eaaraar:</label>
-  			<input type="text" name="e">
             <br>
             
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
+  			<label for="budget">budget estimate: $</label>
+  			<input type="number" name="budget">
+            <br>
             <br>
             
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
+            <label for="invitedpeople"># people invited:</label>
+  			<input type="number" name="invitedpeople">
+            <br>
             <br>
             
-            <label for="e">eaaraar:</label>
+            <label for="e">location:</label>
   			<input type="text" name="e">
+            <br>
             <br>
             
-            <label for="e">eaaraar:</label>
+            <label for="e">other:</label>
   			<input type="text" name="e">
             <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
-            <br>
-            
-            <label for="e">eaaraar:</label>
-  			<input type="text" name="e">
             <br>
         </form>
+        </h1>
+        
+    </div>
+    <div>
+    	
     </div>
 </div>
 </body>
