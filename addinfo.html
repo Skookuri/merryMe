@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Italiana');
+        body {
+        	margin: 0;
+            background-color: white;
+        }
+        #body2 {
+            height: 100vh;
+            display: flex;
+        }
+  
+        #body2::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+  
+            /* Specify the background image */
+            opacity: 0.45;
+            z-index: 0;
+            
+        }
+        
+
+        
+        .title {
+        	font-size: 96px;
+            font-family: Italiana;
+            font-weight: normal;
+        	margin: 0;
+        	text-align: left;
+            float: left;
+            position: absolute;
+        }
+        
+        button {
+        	cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 25px;
+            font-family: Times;
+        }
+        
+        
+        #popup {
+        	font-family: Italiana;
+        	font-size: 30px;
+            
+        	top: 30%;
+            /*left: 143px;
+            right: 50%;*/
+            
+            right, left: 50%;
+            
+        	display: none;
+        	color:rgb(138,108,80);
+            border-radius: 15px;
+            position: fixed;
+            padding: 10px;
+            z-index: 1000;
+            margin: 0 auto;
+            height: fit-content;
+            background-color: white;
+            width: 50%;
+            text-align: center;
+            vertical-align: center;
+        }
+        
+        #close {
+        	content: "\00d7"; /* This will render the 'X' */
+        	float: right;
+            color: white;
+            display: inline-block;
+            border-radius: 25px;
+            border: none;
+            background-color: rgb(138,108,80);
+        }
+        
+        /*screens bigger than 650px has this width*/
+        @media screen and (min-width: 651px) {
+        	#popup {
+            	width: 325px;
+            }
+        }
+        
+        .header {
+        	position: fixed;
+            background-color: white;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            padding-left: 10px;
+            height: 120px;
+			z-index: 100;
+        }
+        
+        .welcomemsg {
+        	font-size: 25px;
+            float: left;
+            
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+        }
+        
+        .prompt {
+        	font-weight: bold;
+            font-size: 25px; 
+            position: absolute; 
+            top: 25%; 
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+        
+        
+        div.form {
+        	display: block;
+            text-align: center;
+            float: inherent;
+            left: 50%;
+            right: 50%;
+        }
+        
+        form, input {
+        	font-size: 35px;
+        }
+        
+        form {
+        	display: inline-block;
+        	position: absolute;
+            margin: 0;
+            top: 35%;
+            font-family: Italiana;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        input {
+        	font-family: Times;
+            color: rgb(138,108,80);
+        }
+
+    </style>
+</head>
+  
+<body>
+<div id="body2" style="color: rgb(138,108,80); padding: 10px;">
+    <div class="header">
+    	<h2 class="title">merryMe</h2>
+    	<h3 class="subtitle" style="font-weight: normal; font-style: italic;">making wedding planning easier.</h3>
+    </div>
+    <div>
+    	<p class="welcomemsg">welcome, [user].</p>
+        <h1 class="prompt">tell us some info about your wedding!</h1>
+    </div>
+    <div>
+    	<form>
+           	<label for="weddingdate">planned date:</label>
+  			<input type="date" name="weddingdate">
+            <br>
+            
+  			<label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+            
+            <label for="e">eaaraar:</label>
+  			<input type="text" name="e">
+            <br>
+        </form>
+    </div>
+</div>
+</body>
+  
+</html>
