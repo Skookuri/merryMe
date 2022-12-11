@@ -9,9 +9,13 @@
     
         <style>
     @import url('https://fonts.googleapis.com/css?family=Italiana');
+    	html {
+
+  			overscroll-behavior: none;
+        }
         body {
         	margin: 0;
-            background-color: white;
+            background-color: black;
         }
         #body2 {
             height: 100vh;
@@ -97,7 +101,7 @@
         
         .header {
         	position: fixed;
-            background-color: white;
+            background-color: black;
             width: 100%;
             top: 0px;
             left: 0px;
@@ -119,7 +123,7 @@
         	font-weight: bold;
             font-size: 25px; 
             position: absolute; 
-            top: 25%; 
+            top: 20%; 
             text-align: center;
             margin: 0;
             width: 100%;
@@ -142,6 +146,8 @@
         form {
         	padding-top: 50px;
             padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
         	display: inline-block;
         	position: absolute;
             /*margin: 0;*/
@@ -151,9 +157,9 @@
             font-family: Italiana;
             left: 50%;
             transform: translateX(-50%);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
             border-radius: 50px;
-            width: 50%;
+            width: fit-content;
         }
         
         input {
@@ -161,7 +167,22 @@
             color: rgb(138,108,80);
             border-width: 2px;
             border-color: rgb(138,108,80);
-            border-style: dotted;
+            border-style: solid;
+            background-color: black;
+        }
+        
+        input:focus {
+        	border-color: white;
+            color: white;
+            transition: ease-in 0.8s;
+        }
+        
+        input[type=number] {
+        	width: 120px;
+        }
+        
+        input[type=date]:hover {
+        	cursor: text;
         }
 
     </style>
@@ -182,8 +203,9 @@
             <br>
             <br>
             
-  			<label for="budget">budget estimate: $</label>
-  			<input type="number" name="budget">
+  			<label for="budget">budget estimate:</label>
+            <br>
+  			<span>$</span><input type="number" name="budget">
             <br>
             <br>
             
@@ -201,6 +223,8 @@
   			<input type="text" name="e">
             <br>
             <br>
+            
+            <button type=submit style="box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px; background-color: black; color: rgb(138,108,80);">Save</button>
         </form>
         </h1>
         
